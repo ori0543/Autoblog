@@ -4,7 +4,6 @@ import { Helmet } from 'react-helmet-async';
 import { ChevronLeft, Calendar, Share2, Heart } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import { articles } from '../data/mockData';
-import { AdPlaceholder } from '../components/layout/AdPlaceholder';
 
 export const BlogPost: React.FC = () => {
   const { articleId } = useParams<{ articleId: string }>();
@@ -53,8 +52,6 @@ export const BlogPost: React.FC = () => {
                 {article.title}
               </h1>
 
-              <AdPlaceholder label="פרסומת עליונה" />
-
               <div className="aspect-video rounded-3xl overflow-hidden mb-12 border border-slate-100 shadow-lg">
                 <img 
                   src={article.image} 
@@ -69,16 +66,10 @@ export const BlogPost: React.FC = () => {
                   {article.content.split('\n\n').map((chunk, index) => (
                     <React.Fragment key={index}>
                       <ReactMarkdown>{chunk}</ReactMarkdown>
-                      {(index + 1) % 3 === 0 && (
-                        <AdPlaceholder label={`פרסומת תוכן ${Math.floor(index / 3) + 1}`} />
-                      )}
                     </React.Fragment>
                   ))}
                 </div>
               </div>
-
-              <AdPlaceholder label="פרסומת אמצע מאמר" />
-              <AdPlaceholder label="פרסומת נוספת" />
 
               <div className="mt-16 pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-6">
                 <div className="flex gap-4">
@@ -93,13 +84,10 @@ export const BlogPost: React.FC = () => {
                 </div>
               </div>
             </article>
-
-            <AdPlaceholder label="פרסומת תחתונה" className="mt-20" />
           </div>
 
           <aside className="space-y-8">
             <div className="sticky top-24 space-y-8">
-              <AdPlaceholder label="פרסומת צד מאמר" className="min-h-[400px]" />
               <div className="bg-slate-50 border border-slate-100 rounded-3xl p-8">
                 <h4 className="text-xl font-serif font-bold mb-6 text-slate-900">כתבות נוספות</h4>
                 <div className="space-y-6">
@@ -111,7 +99,6 @@ export const BlogPost: React.FC = () => {
                   ))}
                 </div>
               </div>
-              <AdPlaceholder label="פרסומת צד נוספת" className="min-h-[250px]" />
             </div>
           </aside>
         </div>

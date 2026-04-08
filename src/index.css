@@ -25,11 +25,6 @@
   }
 }
 
-.ad-placeholder {
-  @apply bg-bg-card border border-slate-200 rounded-lg flex items-center justify-center text-slate-400 text-xs uppercase tracking-widest p-4 my-8;
-  min-height: 100px;
-}
-
 .glass {
   @apply bg-white/80 backdrop-blur-md border border-slate-200;
 }

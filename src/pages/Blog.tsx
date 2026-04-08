@@ -4,7 +4,6 @@ import { Helmet } from 'react-helmet-async';
 import { ChevronLeft, Search, Calendar, User, Tag, ArrowRight } from 'lucide-react';
 import { motion } from 'motion/react';
 import { articles } from '../data/mockData';
-import { AdPlaceholder } from '../components/layout/AdPlaceholder';
 
 export const Blog: React.FC = () => {
   return (
@@ -59,8 +58,6 @@ export const Blog: React.FC = () => {
                     </div>
                   </div>
                 </Link>
-                {/* Ad after every article */}
-                <AdPlaceholder label="פרסומת בתוך הבלוג" />
               </React.Fragment>
             ))}
           </div>
@@ -68,8 +65,6 @@ export const Blog: React.FC = () => {
           {/* Sidebar */}
           <aside className="space-y-8">
             <div className="sticky top-24 space-y-8">
-              <AdPlaceholder label="פרסומת צד בלוג" className="min-h-[300px]" />
-
               <div className="bg-slate-50 border border-slate-100 rounded-3xl p-8">
                 <h4 className="text-xl font-serif font-bold mb-6 text-slate-900">קטגוריות</h4>
                 <div className="flex flex-wrap gap-2">
@@ -80,9 +75,6 @@ export const Blog: React.FC = () => {
                   ))}
                 </div>
               </div>
-
-              <AdPlaceholder label="פרסומת צד תחתונה" className="min-h-[400px]" />
-              <AdPlaceholder label="פרסומת צד נוספת" className="min-h-[200px]" />
             </div>
           </aside>
         </div>
