@@ -41,7 +41,6 @@ export const BlogPost: React.FC = () => {
 
             <article>
               <div className="flex items-center gap-4 text-xs text-slate-400 mb-6 font-bold uppercase tracking-widest">
-                <span className="text-brand-primary">{article.category}</span>
                 <div className="flex items-center gap-1">
                   <Calendar className="w-3 h-3" />
                   {article.date}

@@ -65,16 +65,6 @@ export const Blog: React.FC = () => {
           {/* Sidebar */}
           <aside className="space-y-8">
             <div className="sticky top-24 space-y-8">
-              <div className="bg-slate-50 border border-slate-100 rounded-3xl p-8">
-                <h4 className="text-xl font-serif font-bold mb-6 text-slate-900">קטגוריות</h4>
-                <div className="flex flex-wrap gap-2">
-                  {['מדריכים', 'קנייה', 'תחזוקה', 'חדשות'].map(cat => (
-                    <button key={cat} className="bg-white hover:bg-brand-primary hover:text-white border border-slate-200 rounded-full px-4 py-2 text-xs font-bold transition-all shadow-sm">
-                      {cat}
-                    </button>
-                  ))}
-                </div>
-              </div>
             </div>
           </aside>
         </div>

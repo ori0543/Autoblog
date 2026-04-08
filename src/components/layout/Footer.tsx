@@ -43,16 +43,6 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Categories */}
-          <div>
-            <h4 className="text-lg font-serif font-bold mb-6 text-slate-900">קטגוריות</h4>
-            <ul className="space-y-4 text-sm text-slate-600">
-              <li><button className="hover:text-brand-primary transition-colors">מדריכים</button></li>
-              <li><button className="hover:text-brand-primary transition-colors">קנייה</button></li>
-              <li><button className="hover:text-brand-primary transition-colors">תחזוקה</button></li>
-            </ul>
-          </div>
-
           {/* Contact */}
           <div>
             <h4 className="text-lg font-serif font-bold mb-6 text-slate-900">צור קשר</h4>
