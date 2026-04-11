@@ -8,6 +8,7 @@ import { BlogPost } from './pages/BlogPost';
 import { Accessibility } from './pages/Accessibility';
 import { PrivacyPolicy } from './pages/PrivacyPolicy';
 import { TermsOfUse } from './pages/TermsOfUse';
+import { LikedArticles } from './pages/LikedArticles';
 import { AccessibilityMenu } from './components/accessibility/AccessibilityMenu';
 import { CookieBanner } from './components/layout/CookieBanner';
 import { ScrollToTop } from './components/layout/ScrollToTop';
@@ -22,10 +23,12 @@ export default function App() {
           <main className="flex-grow">
             <Routes>
               <Route path="/" element={<Blog />} />
+              <Route path="/search" element={<Blog />} />
               <Route path="/blog/:articleId" element={<BlogPost />} />
               <Route path="/accessibility" element={<Accessibility />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="/terms-of-use" element={<TermsOfUse />} />
+              <Route path="/liked-articles" element={<LikedArticles />} />
             </Routes>
           </main>
           <Footer />

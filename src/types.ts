@@ -5,6 +5,7 @@ export interface Car {
   price: number;
   engine: string;
   horsepower: number;
+  category: string;
   image: string;
   description: string;
   specs: {
@@ -28,4 +29,5 @@ export interface Article {
   content: string;
   image: string;
   date: string;
+  category: string;
 }
